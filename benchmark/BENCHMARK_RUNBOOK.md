@@ -2,7 +2,7 @@
 
 This is the canonical reproduction guide for MeshDNS hardware benchmarks. It assumes two computers and physical ESP8266-class nodes on the same private LAN. Use `benchmark/ADVERSARIAL_EVAL.md` only after this base setup works.
 
-For optional 4-node BFT notes, see `benchmark/hardware/TESTBED_4NODE.md`.
+For optional 4-node BFT notes, see `benchmark/test_scripts/TESTBED_4NODE.md`.
 
 ## 1. What You Need
 
@@ -87,7 +87,7 @@ PYCODE
 Use the command center to discover ESP8266 nodes. Replace the broadcast address with your subnet's broadcast address:
 
 ```bash
-python3 benchmark/hardware/testbed_command_center.py --broadcast 192.168.1.255
+python3 benchmark/test_scripts/testbed_command_center.py --broadcast 192.168.1.255
 ```
 
 At the prompt:
@@ -115,12 +115,12 @@ Common private broadcast examples include `192.168.0.255`, `192.168.1.255`, and 
 
 ## 5. Interactive Command Center
 
-Script: `benchmark/hardware/testbed_command_center.py`
+Script: `benchmark/test_scripts/testbed_command_center.py`
 
 Start it with:
 
 ```bash
-python3 benchmark/hardware/testbed_command_center.py --broadcast "$MESHDNS_BROADCAST"
+python3 benchmark/test_scripts/testbed_command_center.py --broadcast "$MESHDNS_BROADCAST"
 ```
 
 Token resolution order:
@@ -133,7 +133,7 @@ Token resolution order:
 If nodes were flashed with a custom token:
 
 ```bash
-python3 benchmark/hardware/testbed_command_center.py \
+python3 benchmark/test_scripts/testbed_command_center.py \
   --broadcast "$MESHDNS_BROADCAST" \
   --token 'YOUR_SHARED_TOKEN'
 ```
@@ -172,7 +172,7 @@ For public domains, CDN answers can vary by network and time. For reproducible c
 
 ## 6. Canonical Hardware Benchmark
 
-Script: `benchmark/hardware/run_all_benchmarks.py`
+Script: `benchmark/test_scripts/run_all_benchmarks.py`
 
 This is the main benchmark entry point. It runs:
 
@@ -185,7 +185,7 @@ This is the main benchmark entry point. It runs:
 Basic run:
 
 ```bash
-python3 benchmark/hardware/run_all_benchmarks.py \
+python3 benchmark/test_scripts/run_all_benchmarks.py \
   --broadcast "$MESHDNS_BROADCAST" \
   --target-domain "$MESHDNS_TARGET_DOMAIN" \
   --target-ip "$MESHDNS_TARGET_IP" \
@@ -210,7 +210,7 @@ Key outputs:
 Useful flags:
 
 ```bash
-python3 benchmark/hardware/run_all_benchmarks.py \
+python3 benchmark/test_scripts/run_all_benchmarks.py \
   --resolver "$MESHDNS_RESOLVER" \
   --bft-attempts 3 \
   --bft-resolve-timeout 15 \
@@ -223,14 +223,14 @@ python3 benchmark/hardware/run_all_benchmarks.py \
 
 ## 7. Focused BFT Runner
 
-Script: `benchmark/hardware/bft_benchmark.py`
+Script: `benchmark/test_scripts/bft_benchmark.py`
 
 Use this when you only want to test cold-cache BFT quorum behavior.
 
 Honest BFT example:
 
 ```bash
-python3 benchmark/hardware/bft_benchmark.py \
+python3 benchmark/test_scripts/bft_benchmark.py \
   --broadcast "$MESHDNS_BROADCAST" \
   --target-domain "$MESHDNS_TARGET_DOMAIN" \
   --target-ip "$MESHDNS_TARGET_IP" \
@@ -242,7 +242,7 @@ python3 benchmark/hardware/bft_benchmark.py \
 One-Byzantine example:
 
 ```bash
-python3 benchmark/hardware/bft_benchmark.py \
+python3 benchmark/test_scripts/bft_benchmark.py \
   --broadcast "$MESHDNS_BROADCAST" \
   --target-domain "$MESHDNS_TARGET_DOMAIN" \
   --target-ip "$MESHDNS_TARGET_IP" \
@@ -263,12 +263,12 @@ Outputs:
 
 ## 8. mDNS Comparison Report
 
-Script: `benchmark/hardware/mdns_comparison.py`
+Script: `benchmark/test_scripts/mdns_comparison.py`
 
 This script reads a `meshdns_evaluation.json` produced by the canonical hardware benchmark and regenerates a compact mDNS-vs-MeshDNS report:
 
 ```bash
-python3 benchmark/hardware/mdns_comparison.py \
+python3 benchmark/test_scripts/mdns_comparison.py \
   --input benchmark/results/hardware_YYYYMMDD_HHMMSS/meshdns_evaluation.json
 ```
 
@@ -286,7 +286,7 @@ This is valid evidence only if you actually run it and archive the generated res
 3. Run the canonical benchmark with:
 
 ```bash
-python3 benchmark/hardware/run_all_benchmarks.py \
+python3 benchmark/test_scripts/run_all_benchmarks.py \
   --broadcast "$MESHDNS_BROADCAST" \
   --target-domain "$MESHDNS_TARGET_DOMAIN" \
   --target-ip "$MESHDNS_TARGET_IP" \
@@ -303,7 +303,7 @@ Do not claim video coexistence unless the corresponding result folder is include
 
 ## 10. Optional and Legacy Tools
 
-`benchmark/hardware/serial_query.py` is optional single-node serial debugging. The canonical benchmarks use UDP command/telemetry instead.
+`benchmark/test_scripts/serial_query.py` is optional single-node serial debugging. The canonical benchmarks use UDP command/telemetry instead.
 
 `gateway/server.py`, `gateway/relay_node.py`, and `benchmark/comparison_script.py` are legacy/prototype components. They are not required for the current ESP8266 peer-quorum benchmark path.
 

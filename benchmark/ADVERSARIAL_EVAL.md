@@ -43,7 +43,7 @@ If the local host name is `lab-target` and the IP is `192.168.1.10`, the MeshDNS
 Discover ESP8266 nodes with the command center, using your subnet broadcast address:
 
 ```bash
-python3 benchmark/hardware/testbed_command_center.py --broadcast 192.168.1.255
+python3 benchmark/test_scripts/testbed_command_center.py --broadcast 192.168.1.255
 ```
 
 At the `MeshDNS>` prompt:
@@ -100,7 +100,7 @@ There is no runtime switch for Byzantine behavior in the firmware used for these
 Run one all-honest cold-cache BFT attempt before any adversarial run:
 
 ```bash
-python3 benchmark/hardware/bft_benchmark.py \
+python3 benchmark/test_scripts/bft_benchmark.py \
   --nodes "$MESHDNS_NODES" \
   --resolver "$MESHDNS_RESOLVER" \
   --broadcast "$MESHDNS_BROADCAST" \
@@ -133,7 +133,7 @@ Results are written under `benchmark/results/adversarial_sim_<timestamp>/`.
 Flash all nodes as honest, then run:
 
 ```bash
-python3 benchmark/hardware/adversarial_benchmark.py \
+python3 benchmark/test_scripts/adversarial_benchmark.py \
   --nodes "$MESHDNS_NODES" \
   --broadcast "$MESHDNS_BROADCAST" \
   --target-domain "$MESHDNS_TARGET_DOMAIN" \
@@ -151,7 +151,7 @@ Expected integrity result: `false_accept_rate` should be `0`. Hardware availabil
 Reflash one non-resolver node with `BYZANTINE_MODE 1`, `BYZANTINE_LEVEL 1`, and no Sybil keys:
 
 ```bash
-python3 benchmark/hardware/adversarial_benchmark.py \
+python3 benchmark/test_scripts/adversarial_benchmark.py \
   --nodes "$MESHDNS_NODES" \
   --broadcast "$MESHDNS_BROADCAST" \
   --target-domain "$MESHDNS_TARGET_DOMAIN" \
@@ -177,7 +177,7 @@ Reflash one non-resolver Byzantine node:
 Then run:
 
 ```bash
-python3 benchmark/hardware/adversarial_benchmark.py \
+python3 benchmark/test_scripts/adversarial_benchmark.py \
   --nodes "$MESHDNS_NODES" \
   --broadcast "$MESHDNS_BROADCAST" \
   --target-domain "$MESHDNS_TARGET_DOMAIN" \
@@ -203,7 +203,7 @@ Reflash one non-resolver Byzantine node:
 Then run:
 
 ```bash
-python3 benchmark/hardware/adversarial_benchmark.py \
+python3 benchmark/test_scripts/adversarial_benchmark.py \
   --nodes "$MESHDNS_NODES" \
   --broadcast "$MESHDNS_BROADCAST" \
   --target-domain "$MESHDNS_TARGET_DOMAIN" \
@@ -221,7 +221,7 @@ If `false_accept_rate > 0`, report it as a known limitation of shared-key admiss
 The sweep helper prints a flash checklist for each f value. The ordered Byzantine pool must contain non-resolver node IPs from your own testbed:
 
 ```bash
-python3 benchmark/hardware/adversarial_sweep.py \
+python3 benchmark/test_scripts/adversarial_sweep.py \
   --nodes "$MESHDNS_NODES" \
   --byzantine-pool "$MESHDNS_BYZANTINE_1,$MESHDNS_BYZANTINE_2,$MESHDNS_BYZANTINE_3" \
   --resolver "$MESHDNS_RESOLVER" \
@@ -242,7 +242,7 @@ For a 5-node testbed with quorum 3, f=2 leaves only two honest voters when seedi
 Example:
 
 ```bash
-python3 benchmark/hardware/adversarial_benchmark.py \
+python3 benchmark/test_scripts/adversarial_benchmark.py \
   --nodes "$MESHDNS_NODES" \
   --scenarios benchmark/adversarial_scenarios.json \
   --scenario-id hw_f1_l4_equivoc \

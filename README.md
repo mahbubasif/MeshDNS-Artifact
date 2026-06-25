@@ -4,9 +4,20 @@ MeshDNS is a cooperative DNS resolution framework for resource-constrained IoT n
 
 This repository is being prepared as a research preview. At this stage it contains the empirical research data, benchmark scripts, simulation code, and reproduction notes used for the MeshDNS evaluation. Firmware files will be added to this repository soon; until then, firmware-specific steps in the benchmark docs describe the expected configuration interface and test modes.
 
+## Key Results
+
+<table>
+  <tr>
+    <td><img src="benchmark_figures/fig1_microbenchmark_mdns_vs_meshdns.png" alt="Local resolution microbenchmark comparing OS mDNS and MeshDNS warm cache" width="260"></td>
+    <td><img src="benchmark_figures/fig2_crypto_penalty_timeline.png" alt="Cold-cache BFT latency breakdown" width="260"></td>
+    <td><img src="benchmark_figures/fig3_hardware_stress_dual_axis.png" alt="ESP8266 stress responsiveness and success-rate plot" width="260"></td>
+  </tr>
+</table>
+
 ## Repository Layout
 
-- `benchmark/` contains hardware benchmark runners, curated results, and reproduction runbooks.
+- `benchmark/test_scripts/` contains hardware test scripts and benchmark runners.
+- `benchmark/` contains curated result notes, scenario templates, and reproduction runbooks.
 - `benchmark/results/` contains archived empirical hardware and simulation outputs.
 - `benchmark_figures/` contains extracted plotting data for paper figures.
 - `sim/` contains discrete-event simulation and adversarial evaluation code.

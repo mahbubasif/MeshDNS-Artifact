@@ -3,8 +3,8 @@
 # Run on the machine that routes testbed traffic (often the Mac host or AP).
 #
 # Usage:
-#   sudo ./benchmark/hardware/netem_packet_loss.sh en0 5 on
-#   sudo ./benchmark/hardware/netem_packet_loss.sh en0 0 off
+#   sudo ./benchmark/test_scripts/netem_packet_loss.sh en0 5 on
+#   sudo ./benchmark/test_scripts/netem_packet_loss.sh en0 0 off
 #
 # Find interface: route -n get 192.168.10.1 | grep interface
 

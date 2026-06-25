@@ -12,7 +12,7 @@ Example:
   export MESHDNS_NODES=192.168.1.21,192.168.1.22,192.168.1.23,192.168.1.24,192.168.1.25
   export MESHDNS_RESOLVER=192.168.1.22
   export MESHDNS_BYZANTINE_POOL=192.168.1.21,192.168.1.23,192.168.1.24
-  python3 benchmark/hardware/adversarial_sweep.py \\
+  python3 benchmark/test_scripts/adversarial_sweep.py \\
     --nodes $MESHDNS_NODES \\
     --byzantine-pool $MESHDNS_BYZANTINE_POOL \\
     --resolver $MESHDNS_RESOLVER \\
@@ -33,7 +33,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 _REPO = Path(__file__).resolve().parents[2]
-_BENCH = _REPO / "benchmark" / "hardware"
+_BENCH = _REPO / "benchmark" / "test_scripts"
 _RESULTS = _REPO / "benchmark" / "results"
 if str(_BENCH.parent) not in sys.path:
     sys.path.insert(0, str(_BENCH.parent))

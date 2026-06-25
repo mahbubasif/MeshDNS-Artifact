@@ -7,10 +7,10 @@ energy_profiler_node sketch to one ESP8266, wire the INA219 to an Arduino Uno,
 then use this runner to trigger an in-device warm-cache lookup loop.
 
 Manual mode:
-  python3 benchmark/hardware/energy_profile_benchmark.py --node 192.168.1.24
+  python3 benchmark/test_scripts/energy_profile_benchmark.py --node 192.168.1.24
 
 Automatic INA219 capture:
-  python3 benchmark/hardware/energy_profile_benchmark.py \
+  python3 benchmark/test_scripts/energy_profile_benchmark.py \
     --node 192.168.1.24 --ina-port /dev/cu.usbmodemXXXX
 """
 

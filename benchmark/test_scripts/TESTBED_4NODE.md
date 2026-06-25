@@ -30,7 +30,7 @@ From the repository root on the benchmark host:
 
 ```bash
 export MESHDNS_CONTROL_TOKEN='same-command-token-on-host-and-nodes'
-python3 benchmark/hardware/testbed_command_center.py --broadcast 192.168.1.255
+python3 benchmark/test_scripts/testbed_command_center.py --broadcast 192.168.1.255
 ```
 
 Change `192.168.1.255` to your subnet broadcast address. Common examples are `192.168.0.255`, `192.168.1.255`, and `10.42.0.255`.

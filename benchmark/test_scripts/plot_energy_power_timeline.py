@@ -3,7 +3,7 @@
 Plot INA219 power-over-time from energy_profile_benchmark results.
 
 Example:
-  python3 benchmark/hardware/plot_energy_power_timeline.py \
+  python3 benchmark/test_scripts/plot_energy_power_timeline.py \
     benchmark/results/energy_20260522_031814
 """
 

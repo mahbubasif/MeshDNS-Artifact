@@ -9,11 +9,11 @@ Examples:
   export MESHDNS_NODES=192.168.1.21,192.168.1.22,192.168.1.23,192.168.1.24,192.168.1.25
   export MESHDNS_RESOLVER=192.168.1.22
   export MESHDNS_BYZANTINE_1=192.168.1.21
-  python3 benchmark/hardware/adversarial_benchmark.py \\
+  python3 benchmark/test_scripts/adversarial_benchmark.py \\
     --nodes "$MESHDNS_NODES" --resolver "$MESHDNS_RESOLVER" \\
     --byzantine-ips "$MESHDNS_BYZANTINE_1" --rounds 10 --label hw_f1
 
-  python3 benchmark/hardware/adversarial_benchmark.py \\
+  python3 benchmark/test_scripts/adversarial_benchmark.py \\
     --nodes ... --scenarios benchmark/adversarial_scenarios.json --interactive
 """
 

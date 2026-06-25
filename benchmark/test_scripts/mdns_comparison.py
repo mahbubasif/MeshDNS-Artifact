@@ -5,7 +5,7 @@ mDNS vs MeshDNS comparison report.
 This is intentionally a report/extraction tool, not a second hardware runner.
 The canonical artifact path is:
 
-    python3 benchmark/hardware/run_all_benchmarks.py ...
+    python3 benchmark/test_scripts/run_all_benchmarks.py ...
 
 That runner measures OS mDNS and MeshDNS in one session and writes
 meshdns_evaluation.json plus mdns_meshdns_summary.csv under benchmark/results/.
@@ -35,7 +35,7 @@ def latest_evaluation(results_root: Path) -> Path:
     if not candidates:
         raise FileNotFoundError(
             f"No meshdns_evaluation.json found under {results_root}. "
-            "Run benchmark/hardware/run_all_benchmarks.py first."
+            "Run benchmark/test_scripts/run_all_benchmarks.py first."
         )
     return candidates[0]
 
