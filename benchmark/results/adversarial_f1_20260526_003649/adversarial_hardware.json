@@ -1,0 +1,200 @@
+{
+  "metadata": {
+    "timestamp": "2026-05-26T00:41:17",
+    "nodes": [
+      "192.168.0.102",
+      "192.168.0.103",
+      "192.168.0.104",
+      "192.168.0.106",
+      "192.168.0.107"
+    ],
+    "target_domain": "Mac-mini-2.local",
+    "target_ip": "192.168.0.101"
+  },
+  "scenarios": [
+    {
+      "scenario": {
+        "id": "adversarial_f1",
+        "label": "adversarial_f1",
+        "byzantine_ips": [
+          "192.168.0.102"
+        ],
+        "rounds": 5,
+        "seed_honest_only": true,
+        "seed_byzantine_only": false
+      },
+      "attempts": [
+        {
+          "round": 1,
+          "resolver": "192.168.0.103",
+          "byzantine_ips": [
+            "192.168.0.102"
+          ],
+          "seeded": [
+            "192.168.0.104",
+            "192.168.0.106",
+            "192.168.0.107"
+          ],
+          "failed_seed": [],
+          "success": true,
+          "false_accept": false,
+          "event": "RESOLVE_OK",
+          "message": "domain=Mac-mini-2.local,ip=192.168.0.101,latency_ms=1649.88,source=peer_quorum,detail=votes:3;quorum:3;bft_ms:1643;equivoc_total:0;trust_min:0.82",
+          "parsed": {
+            "domain": "Mac-mini-2.local",
+            "ip": "192.168.0.101",
+            "latency_ms": "1649.88",
+            "source": "peer_quorum",
+            "detail": "votes:3;quorum:3;bft_ms:1643;equivoc_total:0;trust_min:0.82",
+            "detail_votes": "3",
+            "detail_quorum": "3",
+            "detail_bft_ms": "1643",
+            "detail_equivoc_total": "0",
+            "detail_trust_min": "0.82"
+          },
+          "expected_ip": "192.168.0.101",
+          "equivoc_events": 0,
+          "trust_min": "0.82",
+          "telemetry_start_index": 28,
+          "telemetry_end_index": 46
+        },
+        {
+          "round": 2,
+          "resolver": "192.168.0.103",
+          "byzantine_ips": [
+            "192.168.0.102"
+          ],
+          "seeded": [
+            "192.168.0.104",
+            "192.168.0.106",
+            "192.168.0.107"
+          ],
+          "failed_seed": [],
+          "success": true,
+          "false_accept": false,
+          "event": "RESOLVE_OK",
+          "message": "domain=Mac-mini-2.local,ip=192.168.0.101,latency_ms=1639.96,source=peer_quorum,detail=votes:3;quorum:3;bft_ms:1634;equivoc_total:0;trust_min:0.82",
+          "parsed": {
+            "domain": "Mac-mini-2.local",
+            "ip": "192.168.0.101",
+            "latency_ms": "1639.96",
+            "source": "peer_quorum",
+            "detail": "votes:3;quorum:3;bft_ms:1634;equivoc_total:0;trust_min:0.82",
+            "detail_votes": "3",
+            "detail_quorum": "3",
+            "detail_bft_ms": "1634",
+            "detail_equivoc_total": "0",
+            "detail_trust_min": "0.82"
+          },
+          "expected_ip": "192.168.0.101",
+          "equivoc_events": 0,
+          "trust_min": "0.82",
+          "telemetry_start_index": 56,
+          "telemetry_end_index": 71
+        },
+        {
+          "round": 3,
+          "resolver": "192.168.0.103",
+          "byzantine_ips": [
+            "192.168.0.102"
+          ],
+          "seeded": [
+            "192.168.0.104",
+            "192.168.0.106",
+            "192.168.0.107"
+          ],
+          "failed_seed": [],
+          "success": true,
+          "false_accept": false,
+          "event": "RESOLVE_OK",
+          "message": "domain=Mac-mini-2.local,ip=192.168.0.101,latency_ms=1436.39,source=peer_quorum,detail=votes:3;quorum:3;bft_ms:1430;equivoc_total:0;trust_min:0.82",
+          "parsed": {
+            "domain": "Mac-mini-2.local",
+            "ip": "192.168.0.101",
+            "latency_ms": "1436.39",
+            "source": "peer_quorum",
+            "detail": "votes:3;quorum:3;bft_ms:1430;equivoc_total:0;trust_min:0.82",
+            "detail_votes": "3",
+            "detail_quorum": "3",
+            "detail_bft_ms": "1430",
+            "detail_equivoc_total": "0",
+            "detail_trust_min": "0.82"
+          },
+          "expected_ip": "192.168.0.101",
+          "equivoc_events": 0,
+          "trust_min": "0.82",
+          "telemetry_start_index": 81,
+          "telemetry_end_index": 100
+        },
+        {
+          "round": 4,
+          "resolver": "192.168.0.103",
+          "byzantine_ips": [
+            "192.168.0.102"
+          ],
+          "seeded": [
+            "192.168.0.104",
+            "192.168.0.106",
+            "192.168.0.107"
+          ],
+          "failed_seed": [],
+          "success": true,
+          "false_accept": false,
+          "event": "RESOLVE_OK",
+          "message": "domain=Mac-mini-2.local,ip=192.168.0.101,latency_ms=1745.47,source=peer_quorum,detail=votes:4;quorum:3;bft_ms:1738;equivoc_total:0;trust_min:0.56",
+          "parsed": {
+            "domain": "Mac-mini-2.local",
+            "ip": "192.168.0.101",
+            "latency_ms": "1745.47",
+            "source": "peer_quorum",
+            "detail": "votes:4;quorum:3;bft_ms:1738;equivoc_total:0;trust_min:0.56",
+            "detail_votes": "4",
+            "detail_quorum": "3",
+            "detail_bft_ms": "1738",
+            "detail_equivoc_total": "0",
+            "detail_trust_min": "0.56"
+          },
+          "expected_ip": "192.168.0.101",
+          "equivoc_events": 0,
+          "trust_min": "0.56",
+          "telemetry_start_index": 110,
+          "telemetry_end_index": 127
+        },
+        {
+          "round": 5,
+          "resolver": "192.168.0.103",
+          "byzantine_ips": [
+            "192.168.0.102"
+          ],
+          "seeded": [
+            "192.168.0.104",
+            "192.168.0.106",
+            "192.168.0.107"
+          ],
+          "failed_seed": [],
+          "success": false,
+          "false_accept": false,
+          "event": "TIMEOUT",
+          "message": "",
+          "parsed": {},
+          "expected_ip": "192.168.0.101",
+          "equivoc_events": 0,
+          "trust_min": "",
+          "telemetry_start_index": 136,
+          "telemetry_end_index": 160
+        }
+      ],
+      "summary": {
+        "attempts": 5,
+        "success_rate": 0.8,
+        "timeout_rate": 0.2,
+        "false_accept_rate": 0.0,
+        "median_latency_ms": 1644.92,
+        "latency_ci95_ms": 127.43686590962074,
+        "scenario_id": "adversarial_f1",
+        "f": 1,
+        "n_nodes": 5
+      }
+    }
+  ]
+}

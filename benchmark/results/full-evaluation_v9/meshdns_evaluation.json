@@ -1,0 +1,136 @@
+{
+  "metadata": {
+    "timestamp": "2026-05-21T23:53:15",
+    "broadcast": "192.168.0.255",
+    "telemetry_port": 8080,
+    "command_port": 8081,
+    "target_domain": "Mac-mini-2.local",
+    "target_ip": "192.168.0.102",
+    "nodes": [
+      "192.168.0.106",
+      "192.168.0.111",
+      "192.168.0.112",
+      "192.168.0.113",
+      "192.168.0.115"
+    ],
+    "expected_nodes": 5,
+    "node_allowlist": [],
+    "preferred_resolver": "",
+    "bft_attempts": 3,
+    "bft_resolve_timeout": 15.0,
+    "bft_settle_sec": 2.0,
+    "bft_stable_sec": 12.0,
+    "video_coexistence": ""
+  },
+  "mdns": {
+    "protocol": "mDNS",
+    "avg_ms": 90.91262109977833,
+    "raw": [
+      74.69522999963374,
+      50.1637599991227,
+      57.57403199822875,
+      52.89038299815729,
+      47.84581100102514,
+      51.255868002044735,
+      67.69598900064011,
+      59.8895299990545,
+      46.241220999945654,
+      45.410119000734994,
+      63.723425002535805,
+      137.91886999752023,
+      104.46612099985941,
+      82.73100599762984,
+      87.51902600124595,
+      110.72803699789802,
+      381.8135550027364,
+      157.53209099784726,
+      75.55855900136521,
+      62.599788998340955
+    ]
+  },
+  "warm": {
+    "protocol": "MeshDNS_Warm",
+    "avg_ms": 0.456,
+    "raw": [
+      0.47,
+      0.45,
+      0.47,
+      0.45,
+      0.46,
+      0.45,
+      0.45,
+      0.45,
+      0.45,
+      0.46
+    ]
+  },
+  "cold_honest": {
+    "protocol": "MeshDNS_Cold_BFT",
+    "avg_ms": 1392.87,
+    "raw": [
+      1392.87
+    ],
+    "resolver": "192.168.0.115",
+    "voters": [
+      "192.168.0.106",
+      "192.168.0.111",
+      "192.168.0.112",
+      "192.168.0.113"
+    ],
+    "details": "domain=Mac-mini-2.local,ip=192.168.0.102,latency_ms=1392.87,source=peer_quorum,detail=votes:3;quorum:3;bft_ms:1387",
+    "attempts": [
+      {
+        "attempt": 1,
+        "seeded_voters": 4,
+        "failed_seed": [],
+        "event": "RESOLVE_OK",
+        "message": "domain=Mac-mini-2.local,ip=192.168.0.102,latency_ms=1392.87,source=peer_quorum,detail=votes:3;quorum:3;bft_ms:1387",
+        "success": true
+      }
+    ]
+  },
+  "cold_byzantine": {
+    "protocol": "MeshDNS_Cold_BFT",
+    "avg_ms": 1418.76,
+    "raw": [
+      1418.76
+    ],
+    "resolver": "192.168.0.115",
+    "voters": [
+      "192.168.0.106",
+      "192.168.0.111",
+      "192.168.0.112",
+      "192.168.0.113"
+    ],
+    "details": "domain=Mac-mini-2.local,ip=192.168.0.102,latency_ms=1418.76,source=peer_quorum,detail=votes:3;quorum:3;bft_ms:1413",
+    "attempts": [
+      {
+        "attempt": 1,
+        "seeded_voters": 4,
+        "failed_seed": [],
+        "event": "RESOLVE_OK",
+        "message": "domain=Mac-mini-2.local,ip=192.168.0.102,latency_ms=1418.76,source=peer_quorum,detail=votes:3;quorum:3;bft_ms:1413",
+        "success": true
+      }
+    ]
+  },
+  "stress_test": {
+    "protocol": "MeshDNS_Stress",
+    "total_sent": 500,
+    "successes": 399,
+    "success_rate": 79.80000000000001,
+    "qps": 11.301692410795225,
+    "avg_latency_ms": 0.43360902255639094,
+    "traffic_estimate": {
+      "command_payload_bytes": 60,
+      "telemetry_payload_bytes": 99,
+      "udp_ipv4_overhead_bytes": 28,
+      "wifi_mac_overhead_bytes": 34,
+      "per_command_air_bytes": 122,
+      "per_telemetry_air_bytes": 161,
+      "command_kbps": 13.82262129440619,
+      "telemetry_kbps": 14.556579825104249,
+      "heartbeat_kbps": 0.56
+    }
+  }
+}

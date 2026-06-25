@@ -1,0 +1,70 @@
+{
+  "description": "Reusable MeshDNS hardware adversarial scenarios. Replace REPLACE_WITH_* placeholders with non-resolver node IPs from your own testbed before running with --scenarios.",
+  "defaults": {
+    "rounds": 5
+  },
+  "scenarios": [
+    {
+      "id": "hw_f0_baseline",
+      "label": "Benign baseline f=0",
+      "byzantine_ips": [],
+      "seed_honest_only": true,
+      "firmware": {
+        "BYZANTINE_MODE": 0
+      }
+    },
+    {
+      "id": "hw_f1_l1",
+      "label": "One Byzantine fixed wrong IP",
+      "byzantine_ips": [
+        "REPLACE_WITH_BYZANTINE_NODE_1"
+      ],
+      "seed_honest_only": true,
+      "firmware": {
+        "BYZANTINE_MODE": 1,
+        "BYZANTINE_LEVEL": 1,
+        "BYZANTINE_SYBIL_EXTRA_KEYS": 0
+      }
+    },
+    {
+      "id": "hw_f2_l1",
+      "label": "Two Byzantine fixed wrong IP",
+      "byzantine_ips": [
+        "REPLACE_WITH_BYZANTINE_NODE_1",
+        "REPLACE_WITH_BYZANTINE_NODE_2"
+      ],
+      "seed_honest_only": true,
+      "firmware": {
+        "BYZANTINE_MODE": 1,
+        "BYZANTINE_LEVEL": 1,
+        "BYZANTINE_SYBIL_EXTRA_KEYS": 0
+      }
+    },
+    {
+      "id": "hw_f1_l4_equivoc",
+      "label": "One Byzantine equivocation",
+      "byzantine_ips": [
+        "REPLACE_WITH_BYZANTINE_NODE_1"
+      ],
+      "seed_honest_only": true,
+      "firmware": {
+        "BYZANTINE_MODE": 1,
+        "BYZANTINE_LEVEL": 4,
+        "BYZANTINE_SYBIL_EXTRA_KEYS": 0
+      }
+    },
+    {
+      "id": "hw_f1_sybil3",
+      "label": "One physical node with three extra Sybil keys",
+      "byzantine_ips": [
+        "REPLACE_WITH_BYZANTINE_NODE_1"
+      ],
+      "seed_honest_only": true,
+      "firmware": {
+        "BYZANTINE_MODE": 1,
+        "BYZANTINE_LEVEL": 1,
+        "BYZANTINE_SYBIL_EXTRA_KEYS": 3
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "timestamp": "2026-05-22T03:18:13",
+    "node": "192.168.0.106",
+    "domain": "Mac-mini-2.local",
+    "target_ip": "192.168.0.120",
+    "loops": 1000000,
+    "ina_port": "/dev/cu.usbserial-210"
+  },
+  "telemetry": {
+    "armed": {
+      "host_time": 1779398281.771209,
+      "ip": "192.168.0.106",
+      "esp_millis": "42694",
+      "node_id": "04C9CB",
+      "event": "ENERGY_LOOP_ARMED",
+      "message": "domain=Mac-mini-2.local,ip=192.168.0.120,loops=1000000,starts_in_ms=3000,trigger=udp",
+      "fields": {
+        "domain": "Mac-mini-2.local",
+        "ip": "192.168.0.120",
+        "loops": "1000000",
+        "starts_in_ms": "3000",
+        "trigger": "udp"
+      }
+    },
+    "start": {
+      "host_time": 1779398284.780777,
+      "ip": "192.168.0.106",
+      "esp_millis": "45704",
+      "node_id": "04C9CB",
+      "event": "ENERGY_LOOP_START",
+      "message": "domain=Mac-mini-2.local,loops=1000000",
+      "fields": {
+        "domain": "Mac-mini-2.local",
+        "loops": "1000000"
+      }
+    },
+    "done": {
+      "host_time": 1779398293.969036,
+      "ip": "192.168.0.106",
+      "esp_millis": "54885",
+      "node_id": "04C9CB",
+      "event": "ENERGY_LOOP_DONE",
+      "message": "domain=Mac-mini-2.local,ip=192.168.0.120,loops=1000000,hits=1000000,elapsed_ms=9175.991,avg_us=9.176,checksum=0",
+      "fields": {
+        "domain": "Mac-mini-2.local",
+        "ip": "192.168.0.120",
+        "loops": "1000000",
+        "hits": "1000000",
+        "elapsed_ms": "9175.991",
+        "avg_us": "9.176",
+        "checksum": "0"
+      }
+    },
+    "start_synthetic": false
+  },
+  "energy": {
+    "ina_samples": 1066,
+    "start_sample": {
+      "host_time": 1779398284.7739599,
+      "voltage_v": null,
+      "current_ma": null,
+      "power_mw": 477.0,
+      "total_energy_mj": 906.68,
+      "raw": "Power(mW):477.00\tTotal_Energy(mJ):906.68"
+    },
+    "end_sample": {
+      "host_time": 1779398293.974855,
+      "voltage_v": null,
+      "current_ma": null,
+      "power_mw": 490.0,
+      "total_energy_mj": 5464.83,
+      "raw": "Power(mW):490.00\tTotal_Energy(mJ):5464.83"
+    },
+    "gross_loop_energy_mj": 4558.15,
+    "gross_energy_per_lookup_mj": 0.0045581499999999995,
+    "baseline_power_mw": 278.3739837398374,
+    "idle_energy_during_esp_loop_mj": 2554.3571694308944,
+    "idle_corrected_loop_energy_mj": 2003.7928305691053,
+    "idle_corrected_per_lookup_mj": 0.002003792830569105
+  }
+}

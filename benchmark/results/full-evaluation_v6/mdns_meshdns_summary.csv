@@ -1,0 +1,5 @@
+scenario,protocol,avg_ms,success_rate,qps,samples
+mdns,mDNS,1.4065090006624814,,,20
+warm,MeshDNS_Warm,0.47,,,10
+cold_honest,MeshDNS_Cold_BFT,1430.38,,,1
+stress_test,MeshDNS_Stress,0.43903581267217634,72.6,10.259229292938699,

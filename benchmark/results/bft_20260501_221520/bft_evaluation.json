@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "timestamp": "2026-05-01T22:15:40",
+    "target_domain": "Mac-mini-2.local",
+    "target_ip": "192.168.31.14",
+    "broadcast": "192.168.31.255",
+    "nodes": [
+      "192.168.31.18",
+      "192.168.31.27",
+      "192.168.31.59",
+      "192.168.31.77",
+      "192.168.31.216"
+    ],
+    "resolver": "192.168.31.216",
+    "byzantine_ip": "",
+    "seed_honest_only": false
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "resolver": "192.168.31.216",
+      "voters": [
+        "192.168.31.18",
+        "192.168.31.27",
+        "192.168.31.59",
+        "192.168.31.77"
+      ],
+      "byzantine_ip": "",
+      "seeded": [
+        "192.168.31.18",
+        "192.168.31.27",
+        "192.168.31.59",
+        "192.168.31.77"
+      ],
+      "failed_seed": [],
+      "success": true,
+      "event": "RESOLVE_OK",
+      "message": "domain=Mac-mini-2.local,ip=192.168.31.14,latency_ms=1389.21,source=peer_quorum,detail=votes:3;quorum:3;bft_ms:1384",
+      "parsed": {
+        "domain": "Mac-mini-2.local",
+        "ip": "192.168.31.14",
+        "latency_ms": "1389.21",
+        "source": "peer_quorum",
+        "detail": "votes:3;quorum:3;bft_ms:1384",
+        "detail_votes": "3",
+        "detail_quorum": "3",
+        "detail_bft_ms": "1384"
+      },
+      "telemetry_start_index": 5,
+      "telemetry_end_index": 17
+    }
+  ],
+  "success": true
+}

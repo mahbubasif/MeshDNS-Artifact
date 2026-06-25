@@ -1,0 +1,57 @@
+[
+  {
+    "scenario": "mDNS_OS_Baseline",
+    "protocol": "mDNS",
+    "attempts": 20,
+    "successes": 20,
+    "success_rate": 100.0,
+    "mean_ms": 90.91262109977833,
+    "median_ms": 65.70970700158796,
+    "p95_ms": 381.8135550027364,
+    "qps": ""
+  },
+  {
+    "scenario": "MeshDNS_Warm_Cache",
+    "protocol": "MeshDNS_Warm",
+    "attempts": 10,
+    "successes": 10,
+    "success_rate": 100.0,
+    "mean_ms": 0.456,
+    "median_ms": 0.45,
+    "p95_ms": 0.47,
+    "qps": ""
+  },
+  {
+    "scenario": "MeshDNS_Cold_BFT",
+    "protocol": "MeshDNS_Cold_BFT",
+    "attempts": 1,
+    "successes": 1,
+    "success_rate": 100.0,
+    "mean_ms": 1392.87,
+    "median_ms": 1392.87,
+    "p95_ms": 1392.87,
+    "qps": ""
+  },
+  {
+    "scenario": "MeshDNS_Stress",
+    "protocol": "MeshDNS_Stress",
+    "attempts": 500,
+    "successes": 399,
+    "success_rate": 79.80000000000001,
+    "mean_ms": 0.43360902255639094,
+    "median_ms": 0.43360902255639094,
+    "p95_ms": 0.0,
+    "qps": 11.301692410795225
+  },
+  {
+    "scenario": "MeshDNS_Byzantine",
+    "protocol": "MeshDNS_Cold_BFT",
+    "attempts": 1,
+    "successes": 1,
+    "success_rate": 100.0,
+    "mean_ms": 1418.76,
+    "median_ms": 1418.76,
+    "p95_ms": 1418.76,
+    "qps": ""
+  }
+]

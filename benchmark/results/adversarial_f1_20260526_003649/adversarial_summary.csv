@@ -1,0 +1,6 @@
+scenario_id,round,success,false_accept,event,resolver,byzantine_ips,source,latency_ms,votes,quorum,bft_ms,equivoc_events,trust_min,seeded_count,message
+adversarial_f1,1,True,False,RESOLVE_OK,192.168.0.103,192.168.0.102,peer_quorum,1649.88,3,3,1643,0,0.82,3,"domain=Mac-mini-2.local,ip=192.168.0.101,latency_ms=1649.88,source=peer_quorum,detail=votes:3;quorum:3;bft_ms:1643;equivoc_total:0;trust_min:0.82"
+adversarial_f1,2,True,False,RESOLVE_OK,192.168.0.103,192.168.0.102,peer_quorum,1639.96,3,3,1634,0,0.82,3,"domain=Mac-mini-2.local,ip=192.168.0.101,latency_ms=1639.96,source=peer_quorum,detail=votes:3;quorum:3;bft_ms:1634;equivoc_total:0;trust_min:0.82"
+adversarial_f1,3,True,False,RESOLVE_OK,192.168.0.103,192.168.0.102,peer_quorum,1436.39,3,3,1430,0,0.82,3,"domain=Mac-mini-2.local,ip=192.168.0.101,latency_ms=1436.39,source=peer_quorum,detail=votes:3;quorum:3;bft_ms:1430;equivoc_total:0;trust_min:0.82"
+adversarial_f1,4,True,False,RESOLVE_OK,192.168.0.103,192.168.0.102,peer_quorum,1745.47,4,3,1738,0,0.56,3,"domain=Mac-mini-2.local,ip=192.168.0.101,latency_ms=1745.47,source=peer_quorum,detail=votes:4;quorum:3;bft_ms:1738;equivoc_total:0;trust_min:0.56"
+adversarial_f1,5,False,False,TIMEOUT,192.168.0.103,192.168.0.102,,,,,,0,,3,

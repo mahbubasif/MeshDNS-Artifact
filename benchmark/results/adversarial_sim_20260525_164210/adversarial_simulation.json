@@ -1,0 +1,967 @@
+{
+  "metadata": {
+    "timestamp": "2026-05-25T16:42:10",
+    "suite": "all",
+    "rounds": 30,
+    "seed": 42,
+    "packet_loss": 0.0,
+    "n_values": [
+      5,
+      7,
+      10
+    ]
+  },
+  "suites": [
+    {
+      "test": "vary_f",
+      "rows": [
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 5,
+          "required_quorum": 3,
+          "n": 5,
+          "f": 0,
+          "level": "l1_fixed"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 5,
+          "required_quorum": 3,
+          "n": 5,
+          "f": 1,
+          "level": "l1_fixed"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 5,
+          "required_quorum": 3,
+          "n": 5,
+          "f": 2,
+          "level": "l1_fixed"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 5,
+          "required_quorum": 3,
+          "n": 5,
+          "f": 0,
+          "level": "l5_collude"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 5,
+          "required_quorum": 3,
+          "n": 5,
+          "f": 1,
+          "level": "l5_collude"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 5,
+          "required_quorum": 3,
+          "n": 5,
+          "f": 2,
+          "level": "l5_collude"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 5,
+          "required_quorum": 3,
+          "n": 5,
+          "f": 0,
+          "level": "crash"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 4,
+          "required_quorum": 3,
+          "n": 5,
+          "f": 1,
+          "level": "crash"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 3,
+          "required_quorum": 3,
+          "n": 5,
+          "f": 2,
+          "level": "crash"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "n": 7,
+          "f": 0,
+          "level": "l1_fixed"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "n": 7,
+          "f": 1,
+          "level": "l1_fixed"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "n": 7,
+          "f": 2,
+          "level": "l1_fixed"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "n": 7,
+          "f": 3,
+          "level": "l1_fixed"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "n": 7,
+          "f": 0,
+          "level": "l5_collude"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "n": 7,
+          "f": 1,
+          "level": "l5_collude"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "n": 7,
+          "f": 2,
+          "level": "l5_collude"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "n": 7,
+          "f": 3,
+          "level": "l5_collude"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "n": 7,
+          "f": 0,
+          "level": "crash"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 6,
+          "required_quorum": 4,
+          "n": 7,
+          "f": 1,
+          "level": "crash"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 5,
+          "required_quorum": 3,
+          "n": 7,
+          "f": 2,
+          "level": "crash"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 4,
+          "required_quorum": 3,
+          "n": 7,
+          "f": 3,
+          "level": "crash"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 10,
+          "required_quorum": 6,
+          "n": 10,
+          "f": 0,
+          "level": "l1_fixed"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 10,
+          "required_quorum": 6,
+          "n": 10,
+          "f": 1,
+          "level": "l1_fixed"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 10,
+          "required_quorum": 6,
+          "n": 10,
+          "f": 2,
+          "level": "l1_fixed"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 10,
+          "required_quorum": 6,
+          "n": 10,
+          "f": 3,
+          "level": "l1_fixed"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 10,
+          "required_quorum": 6,
+          "n": 10,
+          "f": 4,
+          "level": "l1_fixed"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 10,
+          "required_quorum": 6,
+          "n": 10,
+          "f": 0,
+          "level": "l5_collude"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 10,
+          "required_quorum": 6,
+          "n": 10,
+          "f": 1,
+          "level": "l5_collude"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 10,
+          "required_quorum": 6,
+          "n": 10,
+          "f": 2,
+          "level": "l5_collude"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 10,
+          "required_quorum": 6,
+          "n": 10,
+          "f": 3,
+          "level": "l5_collude"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 10,
+          "required_quorum": 6,
+          "n": 10,
+          "f": 4,
+          "level": "l5_collude"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 10,
+          "required_quorum": 6,
+          "n": 10,
+          "f": 0,
+          "level": "crash"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 9,
+          "required_quorum": 5,
+          "n": 10,
+          "f": 1,
+          "level": "crash"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 8,
+          "required_quorum": 5,
+          "n": 10,
+          "f": 2,
+          "level": "crash"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "n": 10,
+          "f": 3,
+          "level": "crash"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 6,
+          "required_quorum": 4,
+          "n": 10,
+          "f": 4,
+          "level": "crash"
+        }
+      ]
+    },
+    {
+      "test": "collusion",
+      "rows": [
+        {
+          "rounds": 30,
+          "success_rate": 0.0,
+          "timeout_rate": 1.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": NaN,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "n": 7,
+          "f": 1,
+          "scenario": "distributed_miss_collusion"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "n": 7,
+          "f": 1,
+          "scenario": "honest_seeded_collusion"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 0.0,
+          "timeout_rate": 1.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": NaN,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "n": 7,
+          "f": 2,
+          "scenario": "distributed_miss_collusion"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "n": 7,
+          "f": 2,
+          "scenario": "honest_seeded_collusion"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 0.0,
+          "timeout_rate": 1.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": NaN,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "n": 7,
+          "f": 3,
+          "scenario": "distributed_miss_collusion"
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "n": 7,
+          "f": 3,
+          "scenario": "honest_seeded_collusion"
+        }
+      ]
+    },
+    {
+      "test": "sybil",
+      "rows": [
+        {
+          "rounds": 30,
+          "success_rate": 0.0,
+          "timeout_rate": 1.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": NaN,
+          "peer_count": 4,
+          "required_quorum": 3,
+          "n_physical": 4,
+          "sybil_extra_keys": 0
+        },
+        {
+          "rounds": 30,
+          "success_rate": 0.0,
+          "timeout_rate": 1.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": NaN,
+          "peer_count": 5,
+          "required_quorum": 3,
+          "n_physical": 4,
+          "sybil_extra_keys": 1
+        },
+        {
+          "rounds": 30,
+          "success_rate": 0.0,
+          "timeout_rate": 1.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": NaN,
+          "peer_count": 6,
+          "required_quorum": 4,
+          "n_physical": 4,
+          "sybil_extra_keys": 2
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 1.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "n_physical": 4,
+          "sybil_extra_keys": 3
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 1.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 8,
+          "required_quorum": 5,
+          "n_physical": 4,
+          "sybil_extra_keys": 4
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 1.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 9,
+          "required_quorum": 5,
+          "n_physical": 4,
+          "sybil_extra_keys": 5
+        }
+      ],
+      "summary": {
+        "n_physical": 4,
+        "min_sybil_keys": 3,
+        "required_quorum": 4
+      }
+    },
+    {
+      "test": "sybil",
+      "rows": [
+        {
+          "rounds": 30,
+          "success_rate": 0.0,
+          "timeout_rate": 1.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": NaN,
+          "peer_count": 5,
+          "required_quorum": 3,
+          "n_physical": 5,
+          "sybil_extra_keys": 0
+        },
+        {
+          "rounds": 30,
+          "success_rate": 0.0,
+          "timeout_rate": 1.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": NaN,
+          "peer_count": 6,
+          "required_quorum": 4,
+          "n_physical": 5,
+          "sybil_extra_keys": 1
+        },
+        {
+          "rounds": 30,
+          "success_rate": 0.0,
+          "timeout_rate": 1.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": NaN,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "n_physical": 5,
+          "sybil_extra_keys": 2
+        },
+        {
+          "rounds": 30,
+          "success_rate": 0.0,
+          "timeout_rate": 1.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": NaN,
+          "peer_count": 8,
+          "required_quorum": 5,
+          "n_physical": 5,
+          "sybil_extra_keys": 3
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 1.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 9,
+          "required_quorum": 5,
+          "n_physical": 5,
+          "sybil_extra_keys": 4
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 1.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 10,
+          "required_quorum": 6,
+          "n_physical": 5,
+          "sybil_extra_keys": 5
+        }
+      ],
+      "summary": {
+        "n_physical": 5,
+        "min_sybil_keys": 4,
+        "required_quorum": 5
+      }
+    },
+    {
+      "test": "sybil",
+      "rows": [
+        {
+          "rounds": 30,
+          "success_rate": 0.0,
+          "timeout_rate": 1.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": NaN,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "n_physical": 7,
+          "sybil_extra_keys": 0
+        },
+        {
+          "rounds": 30,
+          "success_rate": 0.0,
+          "timeout_rate": 1.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": NaN,
+          "peer_count": 8,
+          "required_quorum": 5,
+          "n_physical": 7,
+          "sybil_extra_keys": 1
+        },
+        {
+          "rounds": 30,
+          "success_rate": 0.0,
+          "timeout_rate": 1.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": NaN,
+          "peer_count": 9,
+          "required_quorum": 5,
+          "n_physical": 7,
+          "sybil_extra_keys": 2
+        },
+        {
+          "rounds": 30,
+          "success_rate": 0.0,
+          "timeout_rate": 1.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": NaN,
+          "peer_count": 10,
+          "required_quorum": 6,
+          "n_physical": 7,
+          "sybil_extra_keys": 3
+        },
+        {
+          "rounds": 30,
+          "success_rate": 0.0,
+          "timeout_rate": 1.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": NaN,
+          "peer_count": 11,
+          "required_quorum": 6,
+          "n_physical": 7,
+          "sybil_extra_keys": 4
+        },
+        {
+          "rounds": 30,
+          "success_rate": 0.0,
+          "timeout_rate": 1.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": NaN,
+          "peer_count": 12,
+          "required_quorum": 7,
+          "n_physical": 7,
+          "sybil_extra_keys": 5
+        }
+      ],
+      "summary": {
+        "n_physical": 7,
+        "min_sybil_keys": 6,
+        "required_quorum": 7
+      }
+    },
+    {
+      "test": "quorum_failure",
+      "rows": [
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "label": "benign_0_loss",
+          "n": 7,
+          "f": 0,
+          "packet_loss": 0.0
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "label": "benign_10_loss",
+          "n": 7,
+          "f": 0,
+          "packet_loss": 0.1
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 5,
+          "required_quorum": 3,
+          "label": "crash_f2",
+          "n": 7,
+          "f": 2,
+          "packet_loss": 0.0
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "label": "slow_f2",
+          "n": 7,
+          "f": 2,
+          "packet_loss": 0.0
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "label": "garbage_f2",
+          "n": 7,
+          "f": 2,
+          "packet_loss": 0.0
+        },
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 0.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 7,
+          "required_quorum": 4,
+          "label": "l1_f1",
+          "n": 7,
+          "f": 1,
+          "packet_loss": 0.05
+        }
+      ]
+    },
+    {
+      "test": "equivocation",
+      "rows": [
+        {
+          "rounds": 30,
+          "success_rate": 1.0,
+          "timeout_rate": 0.0,
+          "false_accept_rate": 0.0,
+          "equivocation_detection_rate": 1.0,
+          "median_latency_ms": 1409.0,
+          "peer_count": 5,
+          "required_quorum": 3,
+          "n": 5,
+          "f": 1,
+          "level": "l4_equivocate"
+        }
+      ]
+    },
+    {
+      "test": "trust_convergence",
+      "result": {
+        "rounds": 30,
+        "byzantine_key": "node-4",
+        "rounds_to_trust_below": 2,
+        "final_byzantine_trust": 1.1269670145346108e-05,
+        "final_honest_trust_mean": 0.9999887303298545,
+        "trajectory": [
+          {
+            "round": 1,
+            "scores": {
+              "node-0": 0.6499999999999999,
+              "node-1": 0.6499999999999999,
+              "node-2": 0.6499999999999999,
+              "node-3": 0.6499999999999999,
+              "node-4": 0.35
+            }
+          },
+          {
+            "round": 11,
+            "scores": {
+              "node-0": 0.9901133662849999,
+              "node-1": 0.9901133662849999,
+              "node-2": 0.9901133662849999,
+              "node-3": 0.9901133662849999,
+              "node-4": 0.009886633714999994
+            }
+          },
+          {
+            "round": 21,
+            "scores": {
+              "node-0": 0.9997207270679582,
+              "node-1": 0.9997207270679582,
+              "node-2": 0.9997207270679582,
+              "node-3": 0.9997207270679582,
+              "node-4": 0.0002792729320416416
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+attempt,success,event,resolver,byzantine_ip,source,latency_ms,votes,quorum,bft_ms,message
+1,True,RESOLVE_OK,192.168.31.216,,peer_quorum,1389.21,3,3,1384,"domain=Mac-mini-2.local,ip=192.168.31.14,latency_ms=1389.21,source=peer_quorum,detail=votes:3;quorum:3;bft_ms:1384"

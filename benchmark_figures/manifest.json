@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-05-22T02:00:09",
+  "graph_set": "golden_graphs_plus_experimental_extras_for_ieee_acsac",
+  "inputs": {
+    "microbenchmark": "benchmark/results/full-evaluation_v7/meshdns_evaluation.json",
+    "bft_timeline": [
+      "benchmark/results/full-evaluation_v6/meshdns_evaluation.json",
+      "benchmark/results/full-evaluation_v7/meshdns_evaluation.json",
+      "benchmark/results/full-evaluation_v9/meshdns_evaluation.json",
+      "benchmark/results/bft_20260501_221520/bft_summary.csv",
+      "benchmark/results/bft_20260501_221941/bft_summary.csv"
+    ],
+    "stress_telemetry": "benchmark/results/full-evaluation_v7/telemetry_log.csv",
+    "churn_simulation": [
+      "sim/churn_simulation.py",
+      "median calibration, 5 random seeds, N=5..1000"
+    ],
+    "extra_latency_cdf": [
+      "benchmark/results/full-evaluation_v6/meshdns_evaluation.json",
+      "benchmark/results/full-evaluation_v6/telemetry_log.csv"
+    ],
+    "extra_protocol_comparison": [
+      "benchmark/results/full-evaluation_v7/meshdns_evaluation.json",
+      "successful hardware BFT observations only; no literature/legacy comparison bars"
+    ],
+    "extra_cache_hit_stress": "benchmark/results/full-evaluation_v7/telemetry_log.csv"
+  },
+  "notes": [
+    "No v1-v5 trend graph is generated.",
+    "meshdns_4node_benchmark*.csv files are intentionally ignored.",
+    "BFT latency breakdown uses the median of successful hardware BFT observations plus firmware timing assumptions.",
+    "Stress graph bins raw full-evaluation_v7 telemetry into observed injection-rate windows.",
+    "Churn graph runs sim/churn_simulation.py using median hardware calibration and 5 random seeds per node count.",
+    "Extra local-path latency distribution uses raw v6 mDNS, warm-cache, and stress-success latency samples.",
+    "Protocol latency comparison is measured-only; protocol tradeoff still uses marked external context values.",
+    "Cache-hit stress figure uses raw full-evaluation_v7 telemetry and the 500-request stress summary."
+  ]
+}
